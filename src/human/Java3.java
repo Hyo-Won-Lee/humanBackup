@@ -1,5 +1,7 @@
 package human;
 
+import java.util.Calendar;
+
 public class Java3 {
 	public static void main(String[] args) {
 		//문제 1.
@@ -314,84 +316,61 @@ public class Java3 {
 		}*/
 		
 		//문제 19
+		/*
 		java.util.Scanner scanner=new java.util.Scanner(System.in);
-		System.out.println("2020년달력");
+		System.out.println("연도를 입력하세요.");
+		int year=Integer.parseInt(scanner.nextLine());
 		System.out.println("달을 입력하세요.>>");
-		int i=Integer.parseInt(scanner.nextLine());
-		String sun="일", mon="월", tue="화", wed="수", thu="목", fri="금", sat="토"; 
-	
-		switch(i) {
-			case 1:
-				int count=1;
-				for(int k=1;k<=6;k++) {
-					if(k==1) {
-						System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t",
-							sun,mon,tue,wed,thu,fri,sat);
-					}
-					System.out.println();
-					for(int l=1;l<=7;l++) {
-						if(count==32) {
-							break;
-						}
-						System.out.printf("%d\t",count++);
-					}
-					System.out.println();
-				}
-				break;
-				
-			case 2:
-				break;
-			
-			case 3:
-				break;
-				
-			case 4:
-				break;
-			
-			case 5:
-				break;
-			
-			case 6:
-				break;
-				
-			case 7:
-				break;
-				
-			case 8:
-				break;
-			
-			case 9:
-				break;
-				
-			case 10:
-				break;
-			
-			case 11:
-				int count11=1;
-				for(int k=1;k<=6;k++) {
-					if(k==1) {
-						System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t",
-							sun,mon,tue,wed,thu,fri,sat);
-					}
-					System.out.println();
-					for(int l=1;l<=7;l++) {
-						if(count11==31) {
-							break;
-						}
-						System.out.printf("%d\t",count11++);
-					}
-					System.out.println();
-				}
-				break;
-			
-			case 12:
-				break;
-			
-			default:
-				break;
-		}
-		
-		
+		int month=Integer.parseInt(scanner.nextLine());
+		System.out.println();
+		System.out.println("\t\t"+"<"+year+"년 "+month+"월 달력"+">");
+		System.out.println();
+		System.out.print("일\t월\t화\t수\t목\t금\t토");
+
+        int total=(year-1)*365 + (year-1)/4 - (year-1)/100 + (year-1)/400;
+        
+        
+        int[] END_DAY= {31,28,31,30,31,30,31,31,30,31,30,31};
+        
+        
+        if((year%4==0&&year%100!=0)||(year%400==0)){
+            END_DAY[1]=29;
+        }else {
+            END_DAY[1]=28;
+        }
+        
+        
+        for(int i=0;i<month-1;i++) {
+            total+=END_DAY[i];
+        }
+        
+        
+        //1일자의 요일
+        total++;
+        int day=total%7;
+        
+
+        for(int i=0;i<month-1;i++) {
+            total+=END_DAY[i];
+        }
+        
+
+        System.out.println();
+        for(int i=1;i<=END_DAY[month-1];i++){
+        	if(i==1){
+        		for(int j=0;j<day;j++){
+        			System.out.print("\t");
+        		}
+            }
+        	System.out.printf("%2d\t",i);
+        	day++;
+        	if(day>6) {
+        		day=0;
+        		System.out.println();
+            }
+        }*/
+
+	    
 		//문제 20
 		/*
 		java.util.Scanner scanner=new java.util.Scanner(System.in);

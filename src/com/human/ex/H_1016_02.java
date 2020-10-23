@@ -1,4 +1,4 @@
-package human;
+package com.human.ex;
 
 public class H_1016_02 {
 

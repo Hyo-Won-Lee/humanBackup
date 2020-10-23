@@ -1,4 +1,4 @@
-package human;
+package com.human.ex;
 
 public class Java003 {
 	public static void main(String[] args) {
@@ -209,7 +209,7 @@ public class Java003 {
 //		
 //		for(int i=1;i<=total;i++) {
 //			
-//			if(i%5==1) {
+//			if(i%count==1) {
 //				lineCount++;
 //			}
 //			
@@ -219,17 +219,11 @@ public class Java003 {
 //				System.out.print(i+"\t");
 //			}
 //			
-//			if(i%5==0) {
+//			if(i%count==0) {
 //				System.out.println();
 //			}
 //			
 //		}
-		
-		
-		
-		
-		
-		
 		
 	}
 }

@@ -1,4 +1,4 @@
-package human;
+package com.human.ex;
 
 class Car{
 	public String color="";

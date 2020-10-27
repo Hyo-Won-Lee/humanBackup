@@ -9,39 +9,39 @@ public class Java5 {
 		//±×·±µ¥ ¸¸¾à 33,66°°ÀÌ µÎ °³°¡ µé¾î°¡¸é ¹Ú¼ö¸¦ µÎ ¹ø Ä£´Ù.
 		//27,28,Â¦(29),Â¦(30),Â¦(31),Â¦(32),Â¦Â¦(33),......
 	
-		for(int i=1;i<=1000;i++) {
-			//100ÀÚ¸®¼ö
-			int equation1=i/100; //100ÀÇ ÀÚ¸®
-			int equation2=(i-(i/100*100))/10; //10ÀÇ ÀÚ¸®
-			int equation3=(i-(i/100*100))-(i-(i/100*100))/10*10; //1ÀÇ ÀÚ¸®
-			
-			//10ÀÚ¸®¼ö
-			int equation4=i/10; //10ÀÇ ÀÚ¸®
-			int equation5=i%10; //1ÀÇ ÀÚ¸®
-			if(i<100) {
-				if(i==3 || i==6 || i==9) {
-					System.out.println(i+" Â¦");
-				}else if((equation4==3 || equation4==6 || equation4==9) && (equation5==3 || equation5==6 || equation5==9)) {
-					System.out.println(i+" Â¦Â¦");
-				}else if((equation4==3 || equation4==6 || equation4==9) || (equation5==3 || equation5==6 || equation5==9)) {
-					System.out.println(i+" Â¦");
-				}else {
-					System.out.println(i);
-				}
-			}else {
-				if((equation1==3 || equation1==6 || equation1==9) && (equation2==3 || equation2==6 || equation2==9) && (equation3==3 || equation3==6 || equation3==9)) {
-					System.out.println(i+" Â¦Â¦Â¦");
-				}else if(((equation1==3 || equation1==6 || equation1==9) && (equation2==3 || equation2==6 || equation2==9)) || 
-						((equation2==3 || equation2==6 || equation2==9) && (equation3==3 || equation3==6 || equation3==9)) || 
-						((equation1==3 || equation1==6 || equation1==9) && (equation3==3 || equation3==6 || equation3==9))){
-					System.out.println(i+" Â¦Â¦");
-				}else if((equation1==3 || equation1==6 || equation1==9) || (equation2==3 || equation2==6 || equation2==9) || (equation3==3 || equation3==6 || equation3==9)) {
-					System.out.println(i+" Â¦");
-				}else {
-					System.out.println(i);
-				}
-			}
-		}
+//		for(int i=1;i<=1000;i++) {
+//			//100ÀÚ¸®¼ö
+//			int equation1=i/100; //100ÀÇ ÀÚ¸®
+//			int equation2=(i-(i/100*100))/10; //10ÀÇ ÀÚ¸®
+//			int equation3=(i-(i/100*100))-(i-(i/100*100))/10*10; //1ÀÇ ÀÚ¸®
+//			
+//			//10ÀÚ¸®¼ö
+//			int equation4=i/10; //10ÀÇ ÀÚ¸®
+//			int equation5=i%10; //1ÀÇ ÀÚ¸®
+//			if(i<100) {
+//				if(i==3 || i==6 || i==9) {
+//					System.out.println(i+" Â¦");
+//				}else if((equation4==3 || equation4==6 || equation4==9) && (equation5==3 || equation5==6 || equation5==9)) {
+//					System.out.println(i+" Â¦Â¦");
+//				}else if((equation4==3 || equation4==6 || equation4==9) || (equation5==3 || equation5==6 || equation5==9)) {
+//					System.out.println(i+" Â¦");
+//				}else {
+//					System.out.println(i);
+//				}
+//			}else {
+//				if((equation1==3 || equation1==6 || equation1==9) && (equation2==3 || equation2==6 || equation2==9) && (equation3==3 || equation3==6 || equation3==9)) {
+//					System.out.println(i+" Â¦Â¦Â¦");
+//				}else if(((equation1==3 || equation1==6 || equation1==9) && (equation2==3 || equation2==6 || equation2==9)) || 
+//						((equation2==3 || equation2==6 || equation2==9) && (equation3==3 || equation3==6 || equation3==9)) || 
+//						((equation1==3 || equation1==6 || equation1==9) && (equation3==3 || equation3==6 || equation3==9))){
+//					System.out.println(i+" Â¦Â¦");
+//				}else if((equation1==3 || equation1==6 || equation1==9) || (equation2==3 || equation2==6 || equation2==9) || (equation3==3 || equation3==6 || equation3==9)) {
+//					System.out.println(i+" Â¦");
+//				}else {
+//					System.out.println(i);
+//				}
+//			}
+//		}
 		
 
 		

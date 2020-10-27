@@ -42,13 +42,265 @@ public class Java6 {
 			k--;
 		}*/
 		
+		//4번
+		/*
+		int k=9;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<i;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<k;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			k--;
+		}*/
 		
+		//5번
+		/*
+		int left=1;
+		int right=4;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+			if(i<4) {
+				left++;
+				right--;
+			}else if(i>3) {
+				left--;
+				right++;
+			}
+		}*/
 		
+		//6번
+		/*
+		int left=4;
+		int right=1;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			if(i<4) {
+				left--;
+				right++;
+			}else if(i>3) {
+				left++;
+				right--;
+			}
+		}*/
 		
+		//7번
+		/*
+		int left=5;
+		int right=0;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+			if(i<4) {
+				left--;
+				right++;
+			}else if(i>3) {
+				left++;
+				right--;
+			}
+		}*/
 		
+		//8번
+		/*
+		int left=0;
+		int right=5;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			if(i<4) {
+				left++;
+				right--;
+			}else if(i>3) {
+				left--;
+				right++;
+			}
+		}*/
 		
+		//9번
+		/*
+		int left=5;
+		int right=5;
+		int k=0;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<(2*k)+1;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			if(i<4) {
+				left--;
+				right--;
+				k++;
+			}else if(i>3) {
+				left++;
+				right++;
+				k--;
+			}
+		}*/
 		
+		//10번
+		/*
+		int left=8;
+		int right=8;
+		int k=0;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<(2*k)+1;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+			left--;
+			right--;	
+			k++;
+		}*/
 		
+		//11번
+		/*
+		int left=0;
+		int right=0;
+		int k=8;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<(2*k)+1;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+			left++;
+			right++;
+			k--;
+		}*/
+		
+		//12번
+		/*
+		int left=0;
+		int right=0;
+		int k=4;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<(2*k)+1;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+			if(i<4) {
+				left++;
+				right--;
+				k--;
+			}else if(i>3) {
+				left--;
+				right++;
+				k++;
+			}
+		}*/
+		
+		//13번
+		/*
+		int left=0;
+		int right=4;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<left;j++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<4;j++) {
+				System.out.print("*");
+			}
+			for(int j=0;j<right;j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+			if(i<4) {
+				left++;
+				right--;
+			}else if(i>3) {
+				left--;
+				right++;
+			}
+		}*/
+		
+		//14번
+		/*
+		int i=0,j=0;
+		int total=9;
+		for(i=0; i<total-1; i++){
+			for(j=i; j<total-1; j++){
+				System.out.print(" ");
+		    }
+		    for(j=0; j<2*i+1; j++){
+		    	if(j==0 || j==2*i)
+		    		System.out.print("*");
+		    	else
+		    		System.out.print(" ");
+		    }
+		    System.out.println();
+		}
+		for(i=0; i<17; i++){
+			System.out.print("*");
+		}*/
+
+		//15번
+		/*
+		int left=0;
+		int right=8;
+		for(int i=0;i<9;i++) {
+			for(int j=0;j<9;j++) {
+				if(j==left || j==right) {
+					System.out.print("*");
+				}else {
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+			if(i<4) {
+				left++;
+				right--;
+			}else if(i>3) {
+				left--;
+				right++;
+			}
+		}*/
 		
 		
 		

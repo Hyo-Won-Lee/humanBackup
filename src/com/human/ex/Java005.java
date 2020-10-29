@@ -1,7 +1,5 @@
 package com.human.ex;
 
-import com.human.dto.Human;
-
 public class Java005 {
 	
 		//ÇÔ¼ö

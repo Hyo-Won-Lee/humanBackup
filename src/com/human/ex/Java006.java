@@ -2,8 +2,6 @@ package com.human.ex;
 
 import java.util.Arrays;
 
-import com.human.dto.Human;
-
 public class Java006 {
 	
 //	//리턴값이 없고 매개변수도 없는 함수

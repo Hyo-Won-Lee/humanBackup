@@ -1,27 +1,32 @@
 package individualProject;
+
 import java.util.Scanner;
+
+interface Car{
+	void work();
+}
+
+interface Cannon{
+	void fire();
+}
+
+class Tank implements Car,Cannon{
+	public void work() {
+		System.out.println("탱크다 앞으로 굴러갑니다.");
+	}
+	
+	public void fire() {
+		System.out.println("탱크에서 대포를 발사합니다.");
+	}
+	
+}
+
 public class practice {
 
 	public static void main(String[] args) {
-		java.util.Scanner sc=new java.util.Scanner(System.in);
-		
-		String beforeStr="";
-		char afterStr[]=new char[100];
-		char convert[]=new char[100];
-		System.out.println("문자열 입력>>");
-		beforeStr=sc.nextLine();
-		convert=beforeStr.toCharArray();
-		
-		for(int i=0;i<convert.length;i++) {
-			if(convert[i]>=97 && convert[i]<=122) {
-				afterStr[i]=(char)(convert[i]-32);
-			}else if(convert[i]>=65 && convert[i]<=90) {
-				afterStr[i]=(char)(convert[i]+32);
-			}
-		}
-		System.out.println(afterStr);
-		
-		
+		Tank tank1=new Tank();
+		tank1.work();
+		tank1.fire();
 		
 		
 	}

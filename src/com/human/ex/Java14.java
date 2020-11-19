@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 class Bank1{
-	public Scanner sc = new Scanner(System.in);
+	public static Scanner sc = new Scanner(System.in);
 	public int listCount =1,bankIndexCount=1;
 	public String id[] = new String[100]; // 데이터는 최상단에 위치한다.
 	public String pw[] = new String[100];
